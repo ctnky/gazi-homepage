@@ -1,0 +1,742 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0 50px;
+  list-style: none;
+  background-color: #2a4173;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px -50px 36px -28px inset;
+}
+
+header a {
+  padding: 4px 10px;
+  border-left: 1px solid #16223b;
+  color: #fff;
+  font-size: 12px;
+}
+
+header a:hover {
+  background-color: #fff;
+  transition: all 0.3s;
+  color: #000;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  z-index: 99;
+}
+
+.viruslink {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.viruslink p {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  z-index: 99;
+}
+
+.fa-virus-covid {
+  position: absolute;
+  color: #bd5734;
+}
+
+.iconfind {
+  border-right: 1px solid #16223b;
+}
+
+.main-header {
+  padding: 25px 50px 0 50px;
+  height: 110px;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #2a4173;
+  box-shadow: rgba(42, 65, 115, 0.3) 0px 0px 9px,
+    rgba(42, 65, 115, 0.5) 0px 10px 9px;
+  z-index: 96;
+}
+
+.logo,
+.ataturk {
+  width: 110px;
+}
+.logo img,
+.ataturk img {
+  width: 100%;
+}
+
+.logo:hover{
+  transform: scale(1.15);
+  transition: transform 0.3s;
+}
+
+.ataturk:hover{
+  transform: scale(1.15);
+  transition: transform 0.3s;
+}
+
+.top-menu {
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slogan > p,
+h1 {
+  color: #2a4173;
+  font-weight: 300;
+}
+
+.slogan:hover{
+  transform: scale(1.15);
+  transition: transform 0.3s;
+}
+
+.slogan p {
+  font-size: 18px;
+  font-family: "Dynalight", cursive;
+}
+
+.top-menu-links {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-self: flex-end;
+}
+
+.top-menu-links .link {
+  flex: 1;
+  font-weight: 700;
+}
+
+.top-menu-links a:hover{
+color:#2a4173;
+}
+
+.top-menu-links > div > a {
+  color: #000;
+}
+
+.link:hover {
+  padding-bottom: 8px;
+  border-bottom: 3px solid #2a4173;
+}
+
+.main-dropdown {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footer-fast-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.fast-links {
+  display: flex;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.fast-col {
+  flex: 1;
+  padding: 5px;
+}
+
+.fast-col > a {
+  display: block;
+  color: #444;
+  padding: 0 15px;
+}
+
+.fast-col > a:hover {
+  color: #c81012;
+}
+
+.fast-links-title {
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.fast-links-title > span {
+  font-size: 24px;
+  padding-bottom: 4px;
+  border-bottom: 3px solid red;
+  color: #333;
+}
+
+.social {
+  background-color: #2a4173;
+  padding: 3px 20px;
+  text-align: right;
+  color: #fff;
+  font-size: 18px;
+  
+}
+
+.fa {
+  padding: 8px;
+  width: 18px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #2a4173;
+}
+
+.fa:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.copyright {
+  background-color: #2a4173;
+  padding: 6px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.footer-links {
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links > div {
+  flex: 1;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.adress {
+  align-items: center;
+  font-size: 12px;
+}
+
+.adress img {
+  height: 80px;
+  margin: 10px;
+}
+
+.footer-links a {
+  font-weight: 700;
+  padding: 3px;
+  color: #333;
+}
+
+.campus a {
+  border-right: 1px solid #555;
+}
+
+.interactive {
+  border-top: 3px solid #2a4173;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #ececec;
+}
+
+.ia-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100px;
+  text-align: center;
+}
+
+.ia-col p {
+  color: #2a4173;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.ia-col img {
+  width: 60px;
+  padding: 15px 0 5px 0;
+}
+
+.ia-col:hover .ia-icon {
+  transform: scale(1.15);
+  transition: transform 0.3s;
+}
+
+.main-content {
+  z-index: 95;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+}
+
+.main-content img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle
+}
+
+.announce-news {
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.announce {
+  padding: 15px;
+  flex: 1;
+}
+
+.ann-title > span,
+.news-title > span {
+  font-size: 24px;
+  padding-bottom: 4px;
+  border-bottom: 3px solid red;
+  color: #333;
+}
+
+.ann-title,
+.news-title {
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+  margin-bottom: 15px;
+}
+
+.ann-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid #999;
+  padding: 15px;
+}
+
+.ann {
+  display: flex;
+  align-items: flex-start;
+  background-color: #eee;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.ann:hover {
+  background-color: #2a4173;
+  transition: all 0.3s;
+}
+
+.ann:hover .date-content {
+  color: #fff;
+}
+
+.date {
+  background-color: #2a4173;
+  height: 70px;
+  flex: 1;
+  border: 1px solid #16223b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.date span {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.date-content {
+  display: flex;
+  align-items: center;
+  color: #000;
+  flex: 3;
+  display: box;
+  padding: 5px 10px;
+  height: 60px;
+}
+
+.fa-bullhorn,
+.fa-list {
+  color: #c81012;
+}
+
+.ann-icon, .news-all {
+  color: #444;
+}
+
+.ann-icon:hover, .news-all:hover {
+  color: #c81012;
+}
+
+.news {
+  padding: 15px;
+  display: block;
+  flex: 2;
+  height: 100%;
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 1px solid #999;
+  padding: 15px 15px 15px 0;
+}
+
+.news-top {
+  display: flex;
+}
+
+.news-col-l,
+.news-col-r {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 15px;
+}
+
+.news-col-r {	
+	margin-right: 0;	
+}
+
+.news-img {
+	overflow:hidden;
+	position:relative;
+}
+.news-all {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.ann-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  color: #999;
+}
+
+.daily-img {
+  max-width: 400px;
+  height: 266px;
+  width: 100%;
+  aspect-ratio: auto 4/3;
+}
+
+.news-date {
+  width: 100%;
+  background-color: #2a4173;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.news-date > span {
+  color: #fff;
+  padding: 3px 15px;
+  font-size: 12px;
+}
+
+.news-topic {
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.news-topic > span {
+  color: #000;
+  padding: 10px 15px;
+  line-height: 24px;
+}
+
+.news-col-l:hover .daily-img {
+  transform: scale(1.15);
+  transition: transform 0.3s;
+}
+
+.news-col-r:hover .daily-img {
+  transform: scale(1.15);
+  transition: transform 0.3s;
+}
+
+.news-list {
+  margin: 20px 15px;
+  margin-right: 20px;
+  width: 98%;
+}
+
+.news-list-item {
+  display: block;
+  text-align: left;
+  margin-top: 6px;
+  border-left: 3px solid #2a4173;
+  padding: 0 5px;
+  transition: transform 0.3s;
+}
+
+.news-list-item:hover {
+  background-color: #16223b;
+  color: #fff;
+}
+
+#backtotop {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+}
+
+#backtotop i {
+  color: #2a4173;
+  font-size: 45px;
+  transition: color 0.3s;
+}
+
+#backtotop i:hover {
+  color: #6a88c8;
+}
+
+.news-all {
+	display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  color: #999;
+}
+
+.magazines {
+	margin: 50px 0;
+  background-position: center;
+  background-image: url("https://gazi.edu.tr/frontend/img/bina-siyah.jpeg");
+  background-size: cover;
+	padding:15px;
+  height: 370px;
+  
+}
+
+magazines a{
+  color:#fff;
+}
+
+.magazine {
+	height:350px;
+	display:flex;
+	align-items:center;
+	padding:10px;
+  
+
+}
+
+.magazine a{
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color:#fff;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.magazine-last {
+	flex:1;
+	height:100%;
+	margin:10px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.magazine-links {
+	flex:2;
+	height:100%;
+	margin-left:10px;
+}
+
+.magazine-last > img {
+	aspect-ratio: 259 / 347;
+	height:100%;	
+}
+
+.magazine-last:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.magazine-links {
+	display:flex;
+}
+
+.magazine-links .link1-l, .link1-r, .m-l-link2, .m-r-link1,.m-r-link2{
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+}
+
+.magazine-links .link1-l:hover, .link1-r:hover, .m-l-link2:hover, .m-r-link1:hover,.m-r-link2:hover{
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
+}
+
+.m-l-links {
+	flex:2;
+	padding: 0 10px;
+}
+
+.m-r-links {
+	flex:1;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+
+.m-r-link1 {
+	margin-bottom:5px;
+background-image: url("https://gazi.edu.tr/frontend/img/teknofest-logo.jpg");
+background-position: center;
+background-size: cover;
+	flex:1;
+	height:100%;
+	width:100%;
+	
+	border-radius:10px;
+}
+
+.m-r-link2 {
+	margin-top:5px;
+	background-color: #dc3545;
+	flex:1;
+	height:100%;
+	width:100%;
+	border-radius:10px;
+}
+
+.m-r-link2 a {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: block;
+}
+
+
+
+.m-l-link1 {
+	flex:1;
+	display: flex;
+	width:100%;
+	height:100%;
+	margin: 0 0 5px 0;
+}
+
+.m-l-link2 {
+	flex:1;
+	display: flex;
+	width:100%;
+	height:100%;
+	margin: 5px 0 0 0;
+  background-image: url("https://gazi.edu.tr/frontend/img/fotoo-02.jpg");
+  background-position: center;
+  background-size: cover;
+	border-radius:5px;
+}
+
+.link1-l {
+	flex:1;
+	background-image: url("https://gazi.edu.tr/frontend/img/graduated_contact-office.png");
+background-position: center;
+background-size: cover;
+	margin-right:5px;
+	border-radius:5px;
+}
+
+.link1-r {
+	flex:1;
+  background-image: url("https://gazi.edu.tr/frontend/img/topluluk.jpg");
+  background-position: center;
+  background-size: cover;
+	margin-left:5px;
+	border-radius:5px;
+}
+
+.link1-r a{
+  margin-top: 20px;
+  margin-left: 20px;
+  display: block;
+}
+
+.m-l-links {
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content:center;
+}
+
+.link1-l a {
+	display:inline-block;
+	height:100%;
+	width:100%;
+}
+
+.link1-l img {
+	display:inline-block;
+	height:170px;
+	width:100%;
+}
+
+@media (max-width: 1200px) {
+
+}
