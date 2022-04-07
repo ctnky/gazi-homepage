@@ -30,8 +30,23 @@ header {
   list-style: none;
   background-color: #2a4173;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: rgba(0, 0, 0, 0.5) 0px -50px 36px -28px inset;
+}
+
+.res-1,
+.res-2 {
+  display: flex;
+}
+
+header .rsp-link {
+  display: none;
+  font-weight: 700;
+}
+
+.gazi-buton {
+  border-right: 1px solid #16223b;
 }
 
 header a {
@@ -51,6 +66,7 @@ header a:hover {
 }
 
 .viruslink {
+  justify-self: flex-end;
   position: relative;
   display: flex;
   justify-content: center;
@@ -96,12 +112,12 @@ header a:hover {
   width: 100%;
 }
 
-.logo:hover{
+.logo:hover {
   transform: scale(1.15);
   transition: transform 0.3s;
 }
 
-.ataturk:hover{
+.ataturk:hover {
   transform: scale(1.15);
   transition: transform 0.3s;
 }
@@ -113,7 +129,6 @@ header a:hover {
   align-items: center;
   flex-direction: column;
 }
-
 
 .slogan {
   display: flex;
@@ -128,7 +143,7 @@ h1 {
   font-weight: 300;
 }
 
-.slogan:hover{
+.slogan:hover {
   transform: scale(1.15);
   transition: transform 0.3s;
 }
@@ -152,8 +167,8 @@ h1 {
   font-weight: 700;
 }
 
-.top-menu-links a:hover{
-color:#2a4173;
+.top-menu-links a:hover {
+  color: #2a4173;
 }
 
 .top-menu-links > div > a {
@@ -218,7 +233,6 @@ color:#2a4173;
   text-align: right;
   color: #fff;
   font-size: 18px;
-  
 }
 
 .fa {
@@ -269,6 +283,11 @@ color:#2a4173;
 .adress img {
   height: 80px;
   margin: 10px;
+}
+
+.adress img:hover {
+  transform: scale(1.15);
+  transition: transform 0.3s;
 }
 
 .footer-links a {
@@ -323,12 +342,12 @@ color:#2a4173;
 .main-content img {
   width: 100%;
   height: 100%;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .announce-news {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
   flex-wrap: wrap;
   padding: 15px;
 }
@@ -411,11 +430,13 @@ color:#2a4173;
   color: #c81012;
 }
 
-.ann-icon, .news-all {
+.ann-icon,
+.news-all {
   color: #444;
 }
 
-.ann-icon:hover, .news-all:hover {
+.ann-icon:hover,
+.news-all:hover {
   color: #c81012;
 }
 
@@ -449,13 +470,13 @@ color:#2a4173;
   margin: 0 15px;
 }
 
-.news-col-r {	
-	margin-right: 0;	
+.news-col-r {
+  margin-right: 0;
 }
 
 .news-img {
-	overflow:hidden;
-	position:relative;
+  overflow: hidden;
+  position: relative;
 }
 .news-all {
   width: 100%;
@@ -475,7 +496,6 @@ color:#2a4173;
 }
 
 .daily-img {
-  max-width: 400px;
   height: 266px;
   width: 100%;
   aspect-ratio: auto 4/3;
@@ -530,13 +550,29 @@ color:#2a4173;
   text-align: left;
   margin-top: 6px;
   border-left: 3px solid #2a4173;
-  padding: 0 5px;
+  padding: 5px 5px;
   transition: transform 0.3s;
+  overflow: hidden;
+  color: #333;
 }
 
 .news-list-item:hover {
-  background-color: #16223b;
+  background-color: #2a4173;
   color: #fff;
+  transition: all 0.3s;
+  box-shadow: rgba(42, 65, 115, 0.4) 0px 5px 15px;
+}
+
+.news-all-icon {
+  color: #333;
+}
+
+.news-all-icon .fa-list {
+  padding-right: 4px;
+}
+
+.news-all-icon:hover {
+  color: #c81012;
 }
 
 #backtotop {
@@ -556,7 +592,7 @@ color:#2a4173;
 }
 
 .news-all {
-	display: flex;
+  display: flex;
   width: 100%;
   justify-content: flex-end;
   align-items: center;
@@ -565,178 +601,219 @@ color:#2a4173;
 }
 
 .magazines {
-	margin: 50px 0;
+  margin: 50px 0;
   background-position: center;
   background-image: url("https://gazi.edu.tr/frontend/img/bina-siyah.jpeg");
   background-size: cover;
-	padding:15px;
+  padding: 15px;
   height: 370px;
-  
 }
 
-magazines a{
-  color:#fff;
+magazines a {
+  color: #fff;
 }
 
 .magazine {
-	height:350px;
-	display:flex;
-	align-items:center;
-	padding:10px;
-  
-
+  height: 350px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
-.magazine a{
+.magazine a {
   font-size: 1.5rem;
   text-decoration: underline;
-  color:#fff;
+  color: #fff;
   margin-left: 20px;
   margin-top: 20px;
 }
 
 .magazine-last {
-	flex:1;
-	height:100%;
-	margin:10px;
-	display:flex;
-	justify-content: center;
-	align-items: center;
+  flex: 1;
+  height: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .magazine-links {
-	flex:2;
-	height:100%;
-	margin-left:10px;
+  flex: 2;
+  height: 100%;
+  margin-left: 10px;
 }
 
 .magazine-last > img {
-	aspect-ratio: 259 / 347;
-	height:100%;	
+  aspect-ratio: 259 / 347;
+  height: 100%;
 }
 
-.magazine-last:hover{
+.magazine-last:hover {
   transform: scale(1.05);
   transition: transform 0.3s;
 }
 
 .magazine-links {
-	display:flex;
+  display: flex;
 }
 
-.magazine-links .link1-l, .link1-r, .m-l-link2, .m-r-link1,.m-r-link2{
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+.magazine-links .link1-l,
+.link1-r,
+.m-l-link2,
+.m-r-link1,
+.m-r-link2 {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
 }
 
-.magazine-links .link1-l:hover, .link1-r:hover, .m-l-link2:hover, .m-r-link1:hover,.m-r-link2:hover{
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
+.magazine-links .link1-l:hover,
+.link1-r:hover,
+.m-l-link2:hover,
+.m-r-link1:hover,
+.m-r-link2:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+  transition: all 0.66s;
 }
 
 .m-l-links {
-	flex:2;
-	padding: 0 10px;
+  flex: 2;
+  padding: 0 10px;
 }
 
 .m-r-links {
-	flex:1;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
-	justify-content:center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .m-r-link1 {
-	margin-bottom:5px;
-background-image: url("https://gazi.edu.tr/frontend/img/teknofest-logo.jpg");
-background-position: center;
-background-size: cover;
-	flex:1;
-	height:100%;
-	width:100%;
-	
-	border-radius:10px;
+  margin-bottom: 5px;
+  background-image: url("https://gazi.edu.tr/frontend/img/teknofest-logo.jpg");
+  background-position: center;
+  background-size: cover;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+
+  border-radius: 10px;
 }
 
 .m-r-link2 {
-	margin-top:5px;
-	background-color: #dc3545;
-	flex:1;
-	height:100%;
-	width:100%;
-	border-radius:10px;
+  margin-top: 5px;
+  background-color: #dc3545;
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .m-r-link2 a {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px;
   display: block;
 }
 
-
+.m-r-link2 a p {
+  text-decoration: none;
+  padding-top: 10px;
+  font-size: 16px;
+}
 
 .m-l-link1 {
-	flex:1;
-	display: flex;
-	width:100%;
-	height:100%;
-	margin: 0 0 5px 0;
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 0 5px 0;
 }
 
 .m-l-link2 {
-	flex:1;
-	display: flex;
-	width:100%;
-	height:100%;
-	margin: 5px 0 0 0;
-  background-image: url("https://gazi.edu.tr/frontend/img/fotoo-02.jpg");
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 5px 0 0 0;
+  background-image: url("Https://gazi.edu.tr/frontend/img/fotoo-02.jpg");
   background-position: center;
   background-size: cover;
-	border-radius:5px;
+  border-radius: 5px;
 }
 
 .link1-l {
-	flex:1;
-	background-image: url("https://gazi.edu.tr/frontend/img/graduated_contact-office.png");
-background-position: center;
-background-size: cover;
-	margin-right:5px;
-	border-radius:5px;
+  flex: 1;
+  background-image: url("https://gazi.edu.tr/frontend/img/graduated_contact-office.png");
+  background-position: center;
+  background-size: cover;
+  margin-right: 5px;
+  border-radius: 5px;
 }
 
 .link1-r {
-	flex:1;
+  flex: 1;
   background-image: url("https://gazi.edu.tr/frontend/img/topluluk.jpg");
   background-position: center;
   background-size: cover;
-	margin-left:5px;
-	border-radius:5px;
+  margin-left: 5px;
+  border-radius: 5px;
 }
 
-.link1-r a{
+.link1-r a {
   margin-top: 20px;
   margin-left: 20px;
   display: block;
 }
 
 .m-l-links {
-	display:flex;
-	flex-direction: column;
-	align-items:center;
-	justify-content:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .link1-l a {
-	display:inline-block;
-	height:100%;
-	width:100%;
+  display: block;
+  margin: 20px;
 }
 
 .link1-l img {
-	display:inline-block;
-	height:170px;
-	width:100%;
+  display: inline-block;
+  height: 170px;
+  width: 100%;
 }
 
-@media (max-width: 1200px) {
+.magazine-links a {
+  margin: 20px;
+}
 
+/* responsive */
+
+@media (max-width: 1200px) {
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  header a {
+    padding: 20px 10px;
+    transition: all 0.3s;
+  }
+
+  header .rsp-link {
+    display: block;
+  }
+
+  .responsive {
+    display: none;
+  }
+
+  .announce-news {
+    flex-direction: column;
+  }
+
+  .magazine {
+    display: flex;
+    flex-direction: column;
+  }
 }
